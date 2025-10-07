@@ -20,14 +20,16 @@ f_rat = 50;
 Vdc_nom_SI = 550;
 
 %% Base values
-Vb=V_rat*sqrt(2)
+Vb=V_rat*sqrt(2);
+wb=2*pi()*f_rat;
+w_b=wb;
 
 % to be added...
 
 %% inverter parameters (pu)
 
 % total dc-link voltage 
-Vdc = 550/Vb % to be added
+Vdc = 550/Vb; % to be added
 
 %% sampling interval
 Ts = 1e-6;
@@ -36,11 +38,12 @@ Tc = 10e-6;
 %% controller setting
 
 % desired voltage (pu)
-v_ref = 1.155 % to be added
-
+v_ref = 1.155 ;% to be added
+v_ref=1;
 % angular frequency
-omega = p*pi()*f_rat % to be added
-
+omega = 2*pi()*f_rat ;% to be added
+omega=1;
 % pulse ratio
-PWMrat = *** % to be added
+PWMrat = 39; % to be added
+
 
