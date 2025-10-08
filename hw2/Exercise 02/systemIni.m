@@ -20,7 +20,7 @@ f_rat = 50;
 Vdc_nom_SI = 550;
 
 %% Base values
-Vb=V_rat*sqrt(2);
+Vb=V_rat*sqrt(2/3);
 wb=2*pi()*f_rat;
 w_b=wb;
 
@@ -38,10 +38,9 @@ Tc = 10e-6;
 %% controller setting
 
 % desired voltage (pu)
-v_ref = 2/sqrt(3) *Vdc;% to be added
-v_ref=Vdc;
+v_ref = 2/sqrt(3) *Vdc/2;% to be added
+% v_ref=8* Vdc/2;
 % angular frequency
-% omega = 2*pi()*f_rat ;% to be added
 omega=1;
 % pulse ratio
 PWMrat = 39; % to be added
