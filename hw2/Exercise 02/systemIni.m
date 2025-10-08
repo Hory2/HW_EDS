@@ -38,7 +38,8 @@ Tc = 10e-6;
 %% controller setting
 
 % desired voltage (pu)
-v_ref = 2*sqrt(3) ;% to be added
+v_ref = 2/sqrt(3) *Vdc;% to be added
+v_ref=Vdc;
 % angular frequency
 % omega = 2*pi()*f_rat ;% to be added
 omega=1;
