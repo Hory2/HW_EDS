@@ -39,7 +39,7 @@ Tc = 10e-6;
 
 % desired voltage (pu)
 v_ref = 2/sqrt(3) *Vdc/2;% to be added
-% v_ref=8* Vdc/2;
+% v_ref=0.1* Vdc/2;
 % angular frequency
 omega=1;
 % pulse ratio
