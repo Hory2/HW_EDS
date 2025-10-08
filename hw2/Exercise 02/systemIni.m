@@ -41,7 +41,7 @@ Tc = 10e-6;
 v_ref = 1.155 ;% to be added
 v_ref=1;
 % angular frequency
-omega = 2*pi()*f_rat ;% to be added
+% omega = 2*pi()*f_rat ;% to be added
 omega=1;
 % pulse ratio
 PWMrat = 39; % to be added
