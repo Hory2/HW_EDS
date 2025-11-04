@@ -38,6 +38,7 @@ Lm_SI = 394.704e-3;
 % inertia (kgm^2)
 M_SI = 0.0027;
 
+
 %% Inverter parameters (SI)
 
 % total dc-link voltage (V)
@@ -52,7 +53,15 @@ Zb=Vb/Ib;
 wb=2*pi()*f_rat;
 w_b=wb;
 Tb=3/2*cosphi*npp*Vb*Ib/wb;
-M_b=Tb*wb; %% nev9mmm overit ....................................................
+M_b=Tb/w_b^2; %% nev9mmm overit ....................................................
+
+% Vb=1;
+% Ib=1;
+% Zb=1;
+% wb=1;
+% w_b=1;
+% Tb=1;
+% M_b=1;
 %% Machine parameters (pu)
 
 % stator resistance 
