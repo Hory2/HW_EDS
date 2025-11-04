@@ -9,7 +9,7 @@ global Ts Tc PWMrat
 %% Rated machine parameters (SI)
 
 % voltage (V)
-V_rat = 400;
+V_rat = 400; %NEHRABAT
 % current (A)
 I_rat = 4.4;
 % frequency (Hz)
@@ -42,7 +42,7 @@ M_SI = 0.0027;
 %% Inverter parameters (SI)
 
 % total dc-link voltage (V)
-Vdc_nom_SI = 600;
+Vdc_nom_SI = 600
 
 %% Base values
 
@@ -118,4 +118,4 @@ Vf = 1% to be added
 omegaM_ref = 0.9 % to be added
 
 % load torque
-TL_ini = 0.3 % to be added
+TL_ini = 0 % to be added
